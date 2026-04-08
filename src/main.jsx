@@ -1,5 +1,4 @@
-import "@fontsource/lora";
-import "@fontsource/arizonia";
+import "@fontsource/courgette";
 import "./styles/globals.scss";
 
 import React from "react";

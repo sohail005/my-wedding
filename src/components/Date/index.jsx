@@ -3,7 +3,7 @@ import useDB from "@/hooks/useDB";
 import { Container, Divider, Grid, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import TextMask from "../TextMask";
-import CardTanggal from "./CardTanggal";
+import CardDate from "./CardDate";
 
 /**
  * Text variant
@@ -30,9 +30,9 @@ const textVariants = {
  *
  * @returns Reacr.ReactElement
  */
-const Tanggal = () => {
-  const textHeader = "Rangkaian Acara Akan Diselenggarakan";
-  const { akad, resepsi } = useDB((db) => db.wedding);
+const EventDate = () => {
+  const textHeader = "Series of Events Will Be Held";
+  const { ceremony, reception } = useDB((db) => db.wedding);
 
   return (
     <Container sx={{ py: 15 }}>
@@ -56,7 +56,7 @@ const Tanggal = () => {
           </Typography>
 
           <Typography variant="h2" sx={{ textAlign: "center", my: 3 }}>
-            {resepsi.tanggal.split(" ").map((text, key) => (
+            {ceremony.date.split(" ").map((text, key) => (
               <TextMask key={key} variants={textVariants}>
                 {text}
               </TextMask>
@@ -67,24 +67,24 @@ const Tanggal = () => {
         </Grid>
 
         <Grid item md={6} xs={12}>
-          <CardTanggal
-            title="Akad Nikah"
-            tanggal={akad.tanggal}
-            jam={akad.jam}
-            lokasi={akad.lokasi}
-            alamat={akad.alamat}
-            link={akad.gmaps.link}
+          <CardDate
+            title="Wedding Ceremony"
+            date={ceremony.date}
+            time={ceremony.time}
+            location={ceremony.location}
+            address={ceremony.address}
+            link={ceremony.gmaps.link}
           />
         </Grid>
 
         <Grid item md={6} xs={12}>
-          <CardTanggal
-            title="Resepsi Nikah"
-            tanggal={resepsi.tanggal}
-            jam={resepsi.jam}
-            lokasi={resepsi.lokasi}
-            alamat={resepsi.alamat}
-            link={resepsi.gmaps.link}
+          <CardDate
+            title="Wedding Reception"
+            date={reception.date}
+            time={reception.time}
+            location={reception.location}
+            address={reception.address}
+            link={reception.gmaps.link}
           />
         </Grid>
       </Grid>
@@ -92,4 +92,4 @@ const Tanggal = () => {
   );
 };
 
-export default Tanggal;
+export default EventDate;

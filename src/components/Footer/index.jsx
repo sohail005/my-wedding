@@ -4,7 +4,7 @@ import FavoriteTwoToneIcon from "@mui/icons-material/FavoriteTwoTone";
 import { Box, Container, Divider, Grid, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import TextMask from "../TextMask";
-import KeluargaBesar from "./KeluargaBesar";
+import BigFamily from "./BigFamily";
 
 /**
  * Text variant
@@ -48,10 +48,10 @@ const dividerVariants = {
  * Footer komponen
  */
 const Footer = () => {
-  const { pria, wanita } = useDB((db) => db.wedding.mempelai);
+  const { groom, bride } = useDB((db) => db.wedding.couple);
   const doaRestu =
-    "Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.";
-  const berbahagia = "Kami Yang Berbahagia";
+    "Your prayers and blessings are a very meaningful gift to us.";
+  const berbahagia = "The Happy Couple";
 
   return (
     <Box
@@ -74,7 +74,7 @@ const Footer = () => {
           <Grid item xs={12}>
             <Typography
               variant="h4"
-              sx={{ textAlign: "center", fontFamily: "Arizonia" }}
+              sx={{ textAlign: "center", fontFamily: "Courgette" }}
             >
               {doaRestu.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
@@ -95,7 +95,7 @@ const Footer = () => {
 
             <Typography
               variant="h2"
-              sx={{ textAlign: "center", fontFamily: "Arizonia" }}
+              sx={{ textAlign: "center", fontFamily: "Courgette" }}
             >
               {berbahagia.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
@@ -105,21 +105,21 @@ const Footer = () => {
             </Typography>
           </Grid>
 
-          {/* Mempelai pria */}
+          {/* Groom */}
           <Grid item md={6} xs={12}>
-            <KeluargaBesar
-              title="Mempelai Pria"
-              orangTuaPria={pria.orangTua.pria}
-              orangTuaWanita={pria.orangTua.wanita}
+            <BigFamily
+              title="Groom"
+              fatherName={groom.parents.father}
+              motherName={groom.parents.mother}
             />
           </Grid>
 
-          {/* Mempelai wanita */}
+          {/* Bride */}
           <Grid item md={6} xs={12} sx={{ mt: { md: 0, xs: 5 } }}>
-            <KeluargaBesar
-              title="Mempelai Wanita"
-              orangTuaPria={wanita.orangTua.pria}
-              orangTuaWanita={wanita.orangTua.wanita}
+            <BigFamily
+              title="Bride"
+              fatherName={bride.parents.father}
+              motherName={bride.parents.mother}
             />
           </Grid>
         </Grid>

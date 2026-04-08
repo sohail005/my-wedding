@@ -29,9 +29,9 @@ const textVariants = {
  * @param {obect} props
  * @returns
  */
-const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
-  const header = "Keluarga Besar";
-  const orangTua = `Bpk. ${orangTuaPria} & Ibu. ${orangTuaWanita}`;
+const BigFamily = ({ title, fatherName, motherName }) => {
+  const header = "Big Family of";
+  const orangTua = `Mr. ${fatherName} & Mrs. ${motherName}`;
 
   return (
     <Grid container spacing={1}>
@@ -41,7 +41,7 @@ const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
           component="p"
           sx={{
             textAlign: "center",
-            fontFamily: "Arizonia",
+            fontFamily: "Courgette",
             color: "background.paper",
           }}
         >
@@ -58,7 +58,7 @@ const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
           variant="h3"
           sx={{
             textAlign: "center",
-            fontFamily: "Arizonia",
+            fontFamily: "Courgette",
           }}
         >
           {title.split(" ").map((text, key) => (
@@ -85,10 +85,10 @@ const KeluargaBesar = ({ title, orangTuaPria, orangTuaWanita }) => {
 /**
  * Prop types
  */
-KeluargaBesar.propTypes = {
+BigFamily.propTypes = {
   title: PropTypes.string.isRequired,
-  orangTuaPria: PropTypes.string.isRequired,
-  orangTuaWanita: PropTypes.string.isRequired,
+  fatherName: PropTypes.string.isRequired,
+  motherName: PropTypes.string.isRequired,
 };
 
-export default KeluargaBesar;
+export default BigFamily;

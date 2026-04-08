@@ -25,9 +25,9 @@ const textVariants = {
  * @returns React.ReactElement
  */
 const Words = () => {
-  const salam = "Assalamu'alaikum Warahmatullahi Wabarakatuh.";
+  const salam = "Peace be upon you, and Allah's mercy and blessings.";
   const words =
-    "Maha suci Allah yang telah menciptakan mahluk-Nya berpasang-pasangan. Ya Allah, perkenankanlah kami merangkaikan kasih sayang yang Kau ciptakan diantara kami untuk mengikuti Sunnah Rasul-Mu dalam rangka membentuk keluarga yang sakinah, mawaddah, warahmah.";
+    "Glory be to Allah Who created all creatures in pairs. O Allah, please allow us to weave the love You created between us to follow the Sunnah of Your Messenger in order to build a peaceful, loving, and merciful family.";
 
   return (
     <Container

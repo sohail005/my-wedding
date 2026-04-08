@@ -1,53 +1,53 @@
 {
   "application": {
-    "name": "The wedding of Saiful & Cindy",
-    "description": "The wedding of Saiful & Cindy. Selasa, 16 Mei 2023",
+    "name": "The wedding of Sohail & Raina",
+    "description": "The wedding of Sohail & Raina. Friday, May 08, 2026",
     "version": "1.0.0"
   },
   "wedding": {
-    "akad": {
-      "tanggal": "Senin, 15 Mei 2023",
-      "jam": "08.00 WIB - Selesai",
-      "lokasi": "Kediaman mempelai wanita",
-      "alamat": "Jl. H. Nurleman RT. 002 RW. 003, Kel. Benda Baru, Kec. Pamulang, Tangerang Selatan",
+    "ceremony": {
+      "date": "Friday, May 08, 2026",
+      "time": "07:00 PM - Start",
+      "location": "Bride's residence",
+      "address": "sohail function hall, sohail complex, Gulbarga road, opp. syndicate bank, Humnabad, Karnataka 585330",
       "gmaps": {
-        "link": "https://maps.app.goo.gl/1kM9KC9m7d477zxD9",
-        "iframeSrc": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.3727501079445!2d106.71945762812459!3d-6.330370382891928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTknNDkuOSJTIDEwNsKwNDMnMTEuOSJF!5e0!3m2!1sid!2sid!4v1681882927364!5m2!1sid!2sid"
+        "link": "https://maps.app.goo.gl/zMyKkB8gcTT83Vue6",
+        "iframeSrc": "https://maps.google.com/maps?q=sohail+function+hall,+Humnabad,+Karnataka&t=&z=13&ie=UTF8&iwloc=&output=embed"
       }
     },
-    "resepsi": {
-      "tanggal": "Selasa, 16 Mei 2023",
-      "jam": "09.00 WIB - Selesai",
-      "lokasi": "Kediaman mempelai wanita",
-      "alamat": "Jl. H. Nurleman RT. 002 RW. 003, Kel. Benda Baru, Kec. Pamulang, Tangerang Selatan",
+    "reception": {
+      "date": "Sunday, May 10, 2026",
+      "time": "07:00 PM - Start",
+      "location": "Groom's residence",
+      "address": "Sohail’s Grand Reception Venue, Baskernagar, Karnataka 585412",
       "gmaps": {
-        "link": "https://maps.app.goo.gl/1kM9KC9m7d477zxD9",
-        "iframeSrc": "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.3727501079445!2d106.71945762812459!3d-6.330370382891928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTknNDkuOSJTIDEwNsKwNDMnMTEuOSJF!5e0!3m2!1sid!2sid!4v1681882927364!5m2!1sid!2sid"
+        "link": "https://maps.app.goo.gl/JM3R9yV6hNC8k2C58",
+        "iframeSrc": "https://maps.google.com/maps?q=Baskernagar,+Karnataka+585412&t=&z=13&ie=UTF8&iwloc=&output=embed"
       }
     },
-    "mempelai": {
-      "pria": {
-        "namaDepan": "Saiful",
-        "namaBelakang": "Akbar",
-        "namaPanggilan": "Ipul",
-        "orangTua": {
-          "keterangan": "Putra ketiga dari keluarga",
-          "pria": "H. Murdih bin Mahir",
-          "wanita": "Mutiyah"
+    "couple": {
+      "groom": {
+        "firstName": "Sohail",
+        "lastName": "",
+        "nickname": "Sonu",
+        "parents": {
+          "description": "First son of the family",
+          "father": "Shakeel",
+          "mother": "Sabiya"
         },
-        "foto": "/assets/images/mempelai/pria.webp",
+        "photo": "/assets/images/couple/groom.webp",
         "bg": "rgb(229, 229, 203)"
       },
-      "wanita": {
-        "namaDepan": "Cindy",
-        "namaBelakang": "Nadya",
-        "namaPanggilan": "Cindy",
-        "orangTua": {
-          "keterangan": "Putri pertama dari keluarga",
-          "pria": "Cecep Supriyadi",
-          "wanita": "Yanih Nurliani"
+      "bride": {
+        "firstName": "Raina",
+        "lastName": "",
+        "nickname": "",
+        "parents": {
+          "description": "First daughter of the family",
+          "father": "Akbar",
+          "mother": "Yasmeen"
         },
-        "foto": "/assets/images/mempelai/wanita.webp",
+        "photo": "/assets/images/couple/bride.webp",
         "bg": "rgb(213, 206, 163)"
       }
     }
@@ -55,14 +55,14 @@
   "hero": {
     "banner": "/assets/images/hero/banner.webp"
   },
-  "galeri": [
-    "/assets/images/galeri/galeri-01.webp",
-    "/assets/images/galeri/galeri-02.webp",
-    "/assets/images/galeri/galeri-03.webp",
-    "/assets/images/galeri/galeri-04.webp",
-    "/assets/images/galeri/galeri-05.webp",
-    "/assets/images/galeri/galeri-06.webp",
-    "/assets/images/galeri/galeri-07.webp",
-    "/assets/images/galeri/galeri-08.webp"
+  "gallery": [
+    "/assets/images/gallery/gallery-01.webp",
+    "/assets/images/gallery/gallery-02.webp",
+    "/assets/images/gallery/gallery-03.webp",
+    "/assets/images/gallery/gallery-04.webp",
+    "/assets/images/gallery/gallery-05.webp",
+    "/assets/images/gallery/gallery-01.webp",
+    "/assets/images/gallery/gallery-03.webp",
+    "/assets/images/gallery/gallery-04.webp"
   ]
 }

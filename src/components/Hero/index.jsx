@@ -69,9 +69,9 @@ const dividerVariants = {
 const Hero = () => {
   const { hero, wedding } = useDB((db) => db);
 
-  const mempelaiPria = wedding.mempelai.pria.namaDepan;
-  const mempelaiWanita = wedding.mempelai.wanita.namaDepan;
-  const mempelai = `${mempelaiPria} & ${mempelaiWanita}`;
+  const groomName = wedding.couple.groom.firstName;
+  const brideName = wedding.couple.bride.firstName;
+  const couple = `${groomName} & ${brideName}`;
   const undangan = "The wedding of";
 
   return (
@@ -152,7 +152,7 @@ const Hero = () => {
                 textShadow: "5px 5px rgba(60, 42, 33, 0.6)",
               }}
             >
-              {mempelai.split(" ").map((text, key) => (
+              {couple.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
                   {text}
                 </TextMask>
@@ -181,7 +181,7 @@ const Hero = () => {
                 textShadow: "3px 3px rgba(60, 42, 33, 0.6)",
               }}
             >
-              {wedding.resepsi.tanggal.split(" ").map((text, key) => (
+              {wedding.ceremony.date.split(" ").map((text, key) => (
                 <TextMask key={key} variants={textVariants}>
                   {text}
                 </TextMask>

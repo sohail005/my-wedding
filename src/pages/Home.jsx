@@ -1,10 +1,10 @@
 import Footer from "@/components/Footer";
-import Galeri from "@/components/Galeri";
+import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import GuestLayout from "@/components/Layouts/GuestLayout";
-import Lokasi from "@/components/Lokasi";
-import Mempelai from "@/components/Mempelai";
-import Tanggal from "@/components/Tanggal";
+import Location from "@/components/Location";
+import Couple from "@/components/Couple";
+import EventDate from "@/components/Date";
 import Words from "@/components/Words";
 
 /**
@@ -23,20 +23,20 @@ const Home = () => {
         <Words />
       </section>
 
-      <section id="mempelai">
-        <Mempelai />
+      <section id="couple">
+        <Couple />
       </section>
 
-      <section id="tanggal">
-        <Tanggal />
+      <section id="date">
+        <EventDate />
       </section>
 
-      <section id="lokasi">
-        <Lokasi />
+      <section id="location">
+        <Location />
       </section>
 
-      <section id="galeri">
-        <Galeri />
+      <section id="gallery">
+        <Gallery />
       </section>
 
       <footer id="footer">

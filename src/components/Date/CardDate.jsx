@@ -75,7 +75,7 @@ const iconVariants = {
  *
  * @returns Reacr.ReactElement
  */
-const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
+const CardDate = ({ title, date, time, location, address, link }) => {
   return (
     <Card
       elevation={0}
@@ -135,7 +135,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
           component="p"
           sx={{ textAlign: "center", mt: 4, fontWeight: 700 }}
         >
-          {tanggal.split(" ").map((text, key) => (
+          {date.split(" ").map((text, key) => (
             <TextMask key={key} variants={textVariants}>
               {text}
             </TextMask>
@@ -147,7 +147,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
           variant="body2"
           sx={{ textAlign: "center", fontWeight: 700 }}
         >
-          {jam.split(" ").map((text, key) => (
+          {time.split(" ").map((text, key) => (
             <TextMask key={key} variants={textVariants}>
               {text}
             </TextMask>
@@ -178,7 +178,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
           component="p"
           sx={{ textAlign: "center", mt: 4, fontWeight: 700 }}
         >
-          {lokasi.split(" ").map((text, key) => (
+          {location.split(" ").map((text, key) => (
             <TextMask key={key} variants={textVariants}>
               {text}
             </TextMask>
@@ -190,7 +190,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
           variant="body2"
           sx={{ textAlign: "center", fontWeight: 700, mt: 2 }}
         >
-          {alamat.split(" ").map((text, key) => (
+          {address.split(" ").map((text, key) => (
             <TextMask key={key} variants={textVariants}>
               {text}
             </TextMask>
@@ -213,7 +213,7 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
           rel="noopener noreferrer"
           sx={{ borderRadius: 0 }}
         >
-          Kunjungi via GMaps
+          Visit via GMaps
         </Button>
       </CardActions>
     </Card>
@@ -223,13 +223,13 @@ const CardTanggal = ({ title, tanggal, jam, lokasi, alamat, link }) => {
 /**
  * CardTanggal prop types
  */
-CardTanggal.propTypes = {
+CardDate.propTypes = {
   title: PropTypes.string.isRequired,
-  tanggal: PropTypes.string.isRequired,
-  jam: PropTypes.string.isRequired,
-  lokasi: PropTypes.string.isRequired,
-  alamat: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  address: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
 };
 
-export default React.memo(CardTanggal);
+export default React.memo(CardDate);

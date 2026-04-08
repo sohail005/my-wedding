@@ -6,8 +6,8 @@ import { Box } from "@mui/material";
  *
  * @returns React.ReactElement
  */
-const Galeri = () => {
-  const { galeri } = useDB((db) => db);
+const Gallery = () => {
+  const { gallery } = useDB((db) => db);
 
   return (
     <Box
@@ -25,7 +25,7 @@ const Galeri = () => {
       }}
     >
       <Box id="boxImage">
-        {galeri.map((src, key) => (
+        {gallery.map((src, key) => (
           <Box key={key} component="span" style={{ "--i": key + 1 }}>
             <Box component="img" src={src} alt={`Galery ${key + 1}`} />
           </Box>
@@ -35,4 +35,4 @@ const Galeri = () => {
   );
 };
 
-export default Galeri;
+export default Gallery;

@@ -27,22 +27,40 @@ const Backsound = () => {
     setPlay((prevState) => !prevState);
   };
 
-  /**
-   * Auto play musik
-   */
   React.useEffect(() => {
-    const playPromise = audioRef.current.play();
+    const attemptPlay = () => {
+      if (audioRef.current && !isPlay) {
+        const playPromise = audioRef.current.play();
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => setPlay(true))
+            .catch(() => setPlay(false));
+        }
+      }
+    };
 
-    if (playPromise !== undefined) {
-      playPromise
-        .then(() => {
-          setPlay(true);
-        })
-        .catch(() => {
-          setPlay(false);
-        });
-    }
-  }, [audioRef]);
+    // Attempt to autoplay immediately on load
+    attemptPlay();
+
+    // Browser policy blocks unmuted autoplay without user interaction.
+    // Attach fallback window listeners to auto-play on first click/touch.
+    const handleFirstInteraction = () => {
+      attemptPlay();
+      document.removeEventListener("click", handleFirstInteraction);
+      document.removeEventListener("touchstart", handleFirstInteraction);
+      document.removeEventListener("keydown", handleFirstInteraction);
+    };
+
+    document.addEventListener("click", handleFirstInteraction);
+    document.addEventListener("touchstart", handleFirstInteraction);
+    document.addEventListener("keydown", handleFirstInteraction);
+
+    return () => {
+      document.removeEventListener("click", handleFirstInteraction);
+      document.removeEventListener("touchstart", handleFirstInteraction);
+      document.removeEventListener("keydown", handleFirstInteraction);
+    };
+  }, []);
 
   // observe when browser is resizing
   React.useLayoutEffect(() => {

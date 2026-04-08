@@ -1,53 +1,53 @@
 export const typography = {
   h1: {
-    fontFamily: "'Arizonia'",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   h2: {
-    fontFamily: "'Arizonia'",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   h3: {
-    fontFamily: "'Arizonia'",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   h4: {
-    fontFamily: "Lora",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   h5: {
-    fontFamily: "Lora",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   h6: {
-    fontFamily: "Lora",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   subtitle1: {
-    fontFamily: "Lora",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   subtitle2: {
-    fontFamily: "Lora",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   body1: {
-    fontFamily: "Lora",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   body2: {
-    fontFamily: "Lora",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   overline: {
-    fontFamily: "Lora",
+    fontFamily: "'Courgette', cursive",
     lineHeight: '100%',
   },
   button: {
     textTransform: undefined,
   },
   fontFamily: [
-    '"Lora"',
+    '"Courgette"',
     '"Style Script"',
     "serif",
     "cursive",

@@ -6,12 +6,12 @@
 	</picture>
 </div>
 
-# Saiful & Cindy's wedding
+# Sohail & Raina's wedding
 
 ## Instalation
 
 ```bash
-git clone https://github.com/saiful-akbar/my-wedding.git
+git clone https://github.com/Sohail-akbar/my-wedding.git
 
 ```
 
@@ -40,20 +40,20 @@ ________________
 Dengan mengharap Ridho Allah SWT dan mengikuti Sunnah Rasul SAW.
 Kami bermaksud menyelenggarakan acara Akad dan Resepsi Pernikahan.
 
-*_Saiful Akbar & Cindy Nadya_*
+*_Sohail Akbar & Raina Nadya_*
 
 *Akad Nikah:*
 🗓️ Senin, 15 Mei 2023
-⏰ 08.00 WIB s/d Selesai
+⏰ 08.00 PM s/d Selesai
 🏡 Alamat : Jl. H. Nurleman, RT 002 RW 003, Kel. Benda Baru, Kec. Pamulang, Tangerang Selatan
 
 *Resepsi:*
 🗓️ Selasa, 16 Mei 2023
-⏰ 10.00 WIB s/d Selesai
+⏰ 10.00 PM s/d Selesai
 🏡 Alamat :  Jl. H. Nurleman, RT 002 RW 003, Kel. Benda Baru, Kec. Pamulang, Tangerang Selatan
 
 Berikut link untuk info lengkap dari acara kami untuk mengantarkan Bapak/Ibu/Saudara/i ketujuan:
-*https://saifulcindy.vercel.app/*
+*https://SohailRaina.vercel.app/*
 
 Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restu di acara pernikahan kami.
 
@@ -61,7 +61,7 @@ Mohon maaf perihal undangan hanya dibagikan melalui pesan ini.
 
 *Wassalamualaikum Warahmatullahi Wabarakatuh*
 
-*Saiful* 💕 *Cindy*
+*Sohail* 💕 *Raina*
 ```
 
 ## Instagram Format undangan digital
@@ -79,20 +79,20 @@ Assalamualaikum Warahmatullahi Wabarakatuh
 Dengan mengharap Ridho Allah SWT dan mengikuti Sunnah Rasul SAW.
 Kami bermaksud menyelenggarakan acara Akad dan Resepsi Pernikahan.
 
-Saiful Akbar & Cindy Nadya
+Sohail Akbar & Raina Nadya
 
 Akad Nikah:
 🗓️ Senin, 15 Mei 2023
-⏰ 08.00 WIB s/d Selesai
+⏰ 08.00 PM s/d Selesai
 🏡 Alamat : Jl. H. Nurleman, RT 002 RW 003, Kel. Benda Baru, Kec. Pamulang, Tangerang Selatan
 
 Resepsi:
 🗓️ Selasa, 16 Mei 2023
-⏰ 10.00 WIB s/d Selesai
+⏰ 10.00 PM s/d Selesai
 🏡 Alamat :  Jl. H. Nurleman, RT 002 RW 003, Kel. Benda Baru, Kec. Pamulang, Tangerang Selatan
 
 Berikut link untuk info lengkap dari acara kami untuk mengantarkan Bapak/Ibu/Saudara/i ketujuan:
-https://saifulcindy.vercel.app/
+https://SohailRaina.vercel.app/
 
 Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan do'a restu di acara pernikahan kami.
 
@@ -100,5 +100,5 @@ Mohon maaf perihal undangan hanya dibagikan melalui pesan ini.
 
 Wassalamualaikum Warahmatullahi Wabarakatuh
 
-Saiful 💕 Cindy
+Sohail 💕 Raina
 ```

@@ -44,11 +44,11 @@ const textVariants = {
  * @param {object} props
  * @returns React.ReactElement
  */
-const ProfilMempelai = ({ mempelai }) => {
-  const { namaDepan, namaBelakang, orangTua } = mempelai;
+const ProfileCouple = ({ couple }) => {
+  const { firstName, lastName, parents } = couple;
 
-  const namaLengkap = `${namaDepan} ${namaBelakang}`;
-  const namaOrangTua = `Bpk. ${orangTua.pria} & Ibu. ${orangTua.wanita}`;
+  const namaLengkap = `${firstName} ${lastName}`;
+  const namaOrangTua = `Mr. ${parents.father} & Mrs. ${parents.mother}`;
 
   return (
     <Grid
@@ -56,7 +56,7 @@ const ProfilMempelai = ({ mempelai }) => {
       spacing={0}
       justifyContent="center"
       alignItems="center"
-      sx={{ backgroundColor: mempelai.bg }}
+      sx={{ backgroundColor: couple.bg }}
     >
       <Grid
         component={motion.div}
@@ -72,7 +72,7 @@ const ProfilMempelai = ({ mempelai }) => {
         sx={{
           py: 10,
           minHeight: { md: "100vh", xs: 300 },
-          backgroundColor: mempelai.bg,
+          backgroundColor: couple.bg,
           display: "flex",
           alignItems: "center",
         }}
@@ -101,7 +101,7 @@ const ProfilMempelai = ({ mempelai }) => {
             component="div"
             sx={{ mb: 4, textAlign: "center" }}
           >
-            {orangTua.keterangan.split(" ").map((text, key) => (
+            {parents.description.split(" ").map((text, key) => (
               <TextMask key={key} variants={textVariants}>
                 {text}
               </TextMask>
@@ -144,7 +144,7 @@ const ProfilMempelai = ({ mempelai }) => {
           whileInView="show"
           exit="exit"
           viewport={{ once: true }}
-          src={mempelai.foto}
+          src={couple.photo}
           sx={{
             width: "100%",
             height: "100%",
@@ -157,8 +157,8 @@ const ProfilMempelai = ({ mempelai }) => {
   );
 };
 
-ProfilMempelai.propTypes = {
-  mempelai: PropTypes.object.isRequired,
+ProfileCouple.propTypes = {
+  couple: PropTypes.object.isRequired,
 };
 
-export default React.memo(ProfilMempelai);
+export default React.memo(ProfileCouple);
