@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@fontsource/arizonia": "^4.5.9",
     "@fontsource/courgette": "^5.2.7",
     "@fontsource/lora": "^4.5.13",
